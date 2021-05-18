@@ -28,3 +28,5 @@ As shown in session1.sps.
 
 PS: on windows if "Error in utils::download.file(url, path, method = method, quiet = quiet,  :cannot open URL 'https://api.github.com/repos/cox-labs/PerseusR/tarball/HEAD'" run "options(download.file.method = "wininet")" before installing:
 
+## aovPerseusR\proteinGroupsANOVA.r
+R script callable via https://github.com/cox-labs/PerseusR as above that can reproduce the ANOVA p&q-values(using Benjamini/Hochberg) from [Multiple-sample tests in Perseus](http://coxdocs.org/doku.php?id=perseus:user:activities:MatrixProcessing:Tests:MultipleSampleTestProcessing): It also provides the mean-difference with posthoc/TukeyHSD corrected p-values for each group comparison as shown in the attached Perseus session. Need to be mindful that NAs are being imputed as 0 so better to take care of NAs in Perseus beforehand! 
